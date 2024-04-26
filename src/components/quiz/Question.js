@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./Question.css" 
+
 function Question(
   {
   questionNumber,
@@ -45,7 +47,7 @@ function Question(
   };
 
   return (
-    <div>
+    <div className="question">
       <div className="question__number">{questionNumber}</div>
       <div className="question-options">
         <div className="question__questionText">{questionText}</div>
