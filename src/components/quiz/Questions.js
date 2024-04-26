@@ -1,6 +1,8 @@
 import React from "react";
 import Question from "./Question";
 
+import "./Questions.css";
+
 function Questions({ questions, quizSubmitted, onOptionSelection, answeres }) {
   const optionSelectionHandler = (questionNumber, answered) => {
     onOptionSelection(questionNumber, answered);
@@ -23,7 +25,9 @@ function Questions({ questions, quizSubmitted, onOptionSelection, answeres }) {
           onOptionSelection={optionSelectionHandler}
         />
         {quizSubmitted && (
-          <div>Correct Answer: {answeres[index]["answer"]}</div>
+          <div className="answer-text">
+            Correct Answer: <strong>{answeres[index]["answer"]}</strong>
+          </div>
         )}
       </div>
     ));
