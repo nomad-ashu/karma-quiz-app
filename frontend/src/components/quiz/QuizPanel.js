@@ -1,24 +1,43 @@
+import axios from "axios"
 import Questions from "./Questions";
 
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 
+import Button from "../buttons/Button";
+
 import "./QuizPanel.css";
+import { useEffect, useState } from "react";
+
 
 const QuizPanel = ({
-  questions,
+  quizId,
   quizSubmitted,
   onOptionSelection,
   onQuizSubmission,
   answeres,
   quizScore,
 }) => {
-  const optionSelectionHandler = (questionNumber, answered) => {
-    onOptionSelection(questionNumber, answered);
+
+  const [questionIds, setQuestionsIds] = useState([])
+
+  
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      const {data} = await axios.get(`/api/quizes/${quizId}`)
+      setQuestionsIds(data.quizQuestionIds)
+    }
+
+    fetchQuestions()
+  },[quizId])
+
+  const optionSelectionHandler = (qId, answered) => {
+    onOptionSelection(qId, answered);
   };
 
   const quizSubmissionHandler = (e) => {
     e.preventDefault();
+    console.log(e.target);
     onQuizSubmission(e);
   };
 
@@ -26,7 +45,7 @@ const QuizPanel = ({
     <form onSubmit={quizSubmissionHandler}>
       <Paper elevation={3}>
         <Questions
-          questions={questions}
+          questionIds={questionIds}
           quizSubmitted={quizSubmitted}
           onOptionSelection={optionSelectionHandler}
           answeres={answeres}
@@ -34,9 +53,6 @@ const QuizPanel = ({
       </Paper>
       {!quizSubmitted && (
         <Button
-          variant="contained"
-          type="submit"
-          sx={{ marginLeft: 5, marginTop: 1, marginBottom: 2 }}
         >
           Submit
         </Button>

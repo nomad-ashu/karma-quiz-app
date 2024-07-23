@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "id": "user_1",
+      "password": "password",
+      "role": "user"
+    }
+  ],
+  "questions": [
+    {
+      "id": "pol_q_1",
+      "question": "What is the capital of India?",
+      "option1": "Mumbai",
+      "option2": "New Delhi",
+      "option3": "Kolkata",
+      "option4": "Chennai",
+      "label": "politics"
+    },
+    {
+      "id": "geo_q_1",
+      "question": "Which river is known as the 'Sorrow of Bihar'?",
+      "option1": "Ganga",
+      "option2": "Yamuna",
+      "option3": "Kosi",
+      "option4": "Narmada",
+      "label": "geography"
+    },
+    {
+      "id": 3,
+      "question": "Who was the first woman Chief Minister of India?",
+      "option1": "Indira Gandhi",
+      "option2": "Mamata Banerjee",
+      "option3": "Sushma Swaraj",
+      "option4": "Sucheta Kriplani",
+      "label": "politics"
+    },
+    {
+      "id": 4,
+      "question": "Which state in India has the highest population density?",
+      "option1": "Bihar",
+      "option2": "West Bengal",
+      "option3": "Kerala",
+      "option4": "Uttar Pradesh",
+      "label": "sociology"
+    },
+    {
+      "id": 5,
+      "question": "Which is the largest state in India by area?",
+      "option1": "Rajasthan",
+      "option2": "Madhya Pradesh",
+      "option3": "Maharashtra",
+      "option4": "Uttar Pradesh",
+      "label": "geography"
+    },
+    {
+      "id": 6,
+      "question": "Who is known as the 'Iron Man of India'?",
+      "option1": "Jawaharlal Nehru",
+      "option2": "Sardar Vallabhbhai Patel",
+      "option3": "Subhas Chandra Bose",
+      "option4": "B. R. Ambedkar",
+      "label": "politics"
+    },
+    {
+      "id": 7,
+      "question": "Which Indian state has the longest coastline?",
+      "option1": "Andhra Pradesh",
+      "option2": "Maharashtra",
+      "option3": "Tamil Nadu",
+      "option4": "Gujarat",
+      "label": "geography"
+    },
+    {
+      "id": 8,
+      "question": "Who was the first President of India?",
+      "option1": "Dr. Rajendra Prasad",
+      "option2": "Jawaharlal Nehru",
+      "option3": "S. Radhakrishnan",
+      "option4": "Lal Bahadur Shastri",
+      "label": "politics"
+    },
+    {
+      "id": 9,
+      "question": "Which Indian state has the highest literacy rate?",
+      "option1": "Kerala",
+      "option2": "Tamil Nadu",
+      "option3": "Maharashtra",
+      "option4": "Punjab",
+      "label": "sociology"
+    },
+    {
+      "id": 10,
+      "question": "Which is the largest river island in India?",
+      "option1": "Majuli",
+      "option2": "Diu",
+      "option3": "Srirangapatna",
+      "option4": "Barren Island",
+      "label": "geography"
+    },
+    {
+      "id": 11,
+      "question": "Which Indian state has the highest number of seats in the Lok Sabha?",
+      "option1": "Maharashtra",
+      "option2": "Uttar Pradesh",
+      "option3": "West Bengal",
+      "option4": "Madhya Pradesh",
+      "label": "politics"
+    },
+    {
+      "id": 12,
+      "question": "Which is the highest peak in India?",
+      "option1": "Kanchenjunga",
+      "option2": "Nanda Devi",
+      "option3": "Mount Everest",
+      "option4": "K2",
+      "label": "geography"
+    }
+  ],
+  "answers": [
+    {
+      "id": "pol_q_1",
+      "question": "What is the capital of India?",
+      "answer": "New Delhi"
+    },
+    {
+      "id": "geo_q_1",
+      "question": "Which river is known as the 'Sorrow of Bihar'?",
+      "answer": "Kosi"
+    },
+    {
+      "id": 3,
+      "question": "Who was the first woman Chief Minister of India?",
+      "answer": "Sucheta Kriplani"
+    },
+    {
+      "id": 4,
+      "question": "Which state in India has the highest population density?",
+      "answer": "Bihar"
+    },
+    {
+      "id": 5,
+      "question": "Which is the largest state in India by area?",
+      "answer": "Rajasthan"
+    },
+    {
+      "id": 6,
+      "question": "Who is known as the 'Iron Man of India'?",
+      "answer": "Sardar Vallabhbhai Patel"
+    },
+    {
+      "id": 7,
+      "question": "Which Indian state has the longest coastline?",
+      "answer": "Gujarat"
+    },
+    {
+      "id": 8,
+      "question": "Who was the first President of India?",
+      "answer": "Dr. Rajendra Prasad"
+    },
+    {
+      "id": 9,
+      "question": "Which Indian state has the highest literacy rate?",
+      "answer": "Kerala"
+    },
+    {
+      "id": 10,
+      "question": "Which is the largest river island in India?",
+      "answer": "Majuli"
+    },
+    {
+      "id": 11,
+      "question": "Which Indian state has the highest number of seats in the Lok Sabha?",
+      "answer": "Uttar Pradesh"
+    },
+    {
+      "id": 12,
+      "question": "Which is the highest peak in India?",
+      "answer": "Kanchenjunga"
+    }
+  ]
+}
