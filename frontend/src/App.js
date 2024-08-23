@@ -1,12 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {  useState } from "react";
 
 import { useAuth } from "./hooks/useAuth";
 
 import Quiz from "./pages/Quiz";
 import NavBar from "./components/navbar/NavBar";
 import SignIn from "./pages/SignIn";
-import AuthProvider from "./components/context-providers/AuthProvider";
+import AuthProvider from "./components/contextProviders/AuthProvider";
 
 
 import "./App.css";
