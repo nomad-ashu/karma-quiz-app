@@ -1,9 +1,6 @@
 import axios from "axios"
 import Questions from "./Questions";
 
-// // import Button from "@mui/material/Button";
-// import Paper from "@mui/material/Paper";
-
 import Paper from "../basic/Paper";
 import Button from "../basic/Button";
 import { useEffect, useState } from "react";
