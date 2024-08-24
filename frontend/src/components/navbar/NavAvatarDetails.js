@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import Button from "../buttons/Button";
+import Button from "../basic/Button";
 
 const NavAvatarDetails = ({user}) => {
     let navigate = useNavigate()

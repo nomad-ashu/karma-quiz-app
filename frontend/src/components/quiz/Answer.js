@@ -10,11 +10,11 @@ const Answer = ({questionId}) => {
             setCorrectAnswer(data.answer)
         }
         fetchAnswer()
-    }, [])
+    }, [questionId])
 
   return (
-    <div>
-      Correct Answer: {correctAnswer}
+    <div className='mx-6 mt-2'>
+      Correct Answer: <span className="text-blue-600 font-semibold">{correctAnswer}</span>
     </div>
   )
 }

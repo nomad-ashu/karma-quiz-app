@@ -1,6 +1,5 @@
 import Question from "./Question";
 
-import "./Questions.css";
 
 function Questions({ questionIds, quizSubmitted, onOptionSelection, answeres }) {
 
@@ -9,14 +8,12 @@ function Questions({ questionIds, quizSubmitted, onOptionSelection, answeres }) 
   };
 
   let quizContent = questionIds.map((questionId, index) => (
-      <div key={questionId}>
         <Question
           questionNumber={index + 1}
           questionId={questionId}
           quizSubmitted={quizSubmitted}
           onOptionSelection={optionSelectionHandler}
         />
-      </div>
     ))
   return <div>{quizContent}</div>;
 }

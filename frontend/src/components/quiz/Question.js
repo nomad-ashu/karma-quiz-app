@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./Question.css";
 import Answer from "./Answer";
 
 function Question({
@@ -49,15 +48,16 @@ function Question({
   };
 
   return (
-    <>
-    <div className="question">
-      <div className="question__number">{questionNumber}</div>
-      <div className="question-options">
-        <div className="question__questionText">{question.question}</div>
-        <div className="question__options">
+    <div>
+      <div className="flex mt-4 mb-2 items-center">
+        <div className="text-base w-2 mx-2">{questionNumber}</div>
+        <div className="text-base">{question.question}</div>
+      </div>
+      <div className="mx-6">
+        <div className="space-y-2">
           {question.options.map((option, index) => (
             <div
-              className="question__option"
+              className="flex items-center space-x-2"
               key={`${questionNumber}-${index}`}
             >
               <input
@@ -66,12 +66,12 @@ function Question({
                 id={`q${questionNumber}option${index + 1}`}
                 name="selectedOption"
                 value={option}
-                className="question__checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600"
                 onChange={(event) => checkboxSelectionHandler(event)}
                 disabled={quizSubmitted}
               />
               <label
-                className="question__optionText"
+                className="text-sm"
                 htmlFor={`q${questionNumber}option${index + 1}`}
               >
                 {option}
@@ -80,9 +80,8 @@ function Question({
           ))}
         </div>
       </div>
+      {quizSubmitted && <Answer questionId={questionId} />}
     </div>
-    {quizSubmitted && <Answer questionId={questionId}/>}
-    </>
   );
 }
 

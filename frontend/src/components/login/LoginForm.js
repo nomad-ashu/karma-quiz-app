@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { useAuth } from "../../hooks/useAuth";
 
-import Button from "../buttons/Button";
+import Button from "../basic/Button";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {

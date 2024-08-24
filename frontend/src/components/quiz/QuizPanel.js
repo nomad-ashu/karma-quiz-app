@@ -1,12 +1,11 @@
 import axios from "axios"
 import Questions from "./Questions";
 
-// import Button from "@mui/material/Button";
-import Paper from "@mui/material/Paper";
+// // import Button from "@mui/material/Button";
+// import Paper from "@mui/material/Paper";
 
-import Button from "../buttons/Button";
-
-import "./QuizPanel.css";
+import Paper from "../basic/Paper";
+import Button from "../basic/Button";
 import { useEffect, useState } from "react";
 
 
@@ -43,7 +42,7 @@ const QuizPanel = ({
 
   return (
     <form onSubmit={quizSubmissionHandler}>
-      <Paper elevation={3}>
+      <Paper>
         <Questions
           questionIds={questionIds}
           quizSubmitted={quizSubmitted}
@@ -52,12 +51,12 @@ const QuizPanel = ({
         />
       </Paper>
       {!quizSubmitted && (
-        <Button
+        <Button className="mx-12 mt-8"
         >
           Submit
         </Button>
       )}
-      {quizSubmitted && <div className="score">Your Score: {quizScore}</div>}
+      {quizSubmitted && <div className="text-blue-600 mx-12 my-6">Your Score: {quizScore}</div>}
     </form>
   );
 };
